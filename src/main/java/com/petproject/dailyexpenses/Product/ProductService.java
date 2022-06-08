@@ -17,4 +17,10 @@ public class ProductService {
     public void addExpense(String type, Double price) {
         productRepo.save(new Product(type, price));
     }
+
+
+    public Double getFoodSum() {
+        return productRepo.getSumByFood();
+    }
+
 }

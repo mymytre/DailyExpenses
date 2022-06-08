@@ -2,8 +2,8 @@ package com.petproject.dailyexpenses.Product;
 
 import javax.persistence.*;
 
-@Entity
-@Table
+@Entity(name = "Product")
+@Table(name = "product")
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
